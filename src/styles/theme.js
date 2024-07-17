@@ -12,7 +12,8 @@ export default {
         TAGS_BACKGROUND: "hsl(201, 22%, 13%)",
 
         FONT_COLOR_GRAY: "hsl(240, 6%, 51%)",
-        FONT_COLOR_WHITE: "hsl(0, 0%, 100%)"
+        FONT_COLOR_GRAY_INPUT_TITLE: "hsl(240, 7%, 78%)",
+        FONT_COLOR_WHITE: "hsl(0, 0%, 100%)",
 
 
 
