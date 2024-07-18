@@ -23,5 +23,20 @@ export default createGlobalStyle`
         font-family: "Roboto", sans-serif;
 
     }
+
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: ${({theme}) => theme.COLORS.BUTTON_BACKGROUND};
+        color: ${({theme}) => theme.COLORS.FONT_COLOR_WHITE};
+        
+    }
+
+    button:hover{  
+
+        filter: brightness(0.8);
+        transition: all 200ms;
+
+    }
 `
 
