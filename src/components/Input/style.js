@@ -4,9 +4,9 @@ export const Container = styled.div`
 
     display: grid;
     gap: 0.8rem;
-      
+    
     h2 {
-        color: ${({theme}) => theme.COLORS.FONT_COLOR_GRAY_INPUT_TITLE};
+        color: ${({theme}) => theme.COLORS.LIGHT_400};
         font-size: 1.6rem;
         font-weight: 400;        
 
@@ -16,7 +16,7 @@ export const Container = styled.div`
     div {
         height: 4.8rem;
 
-        background-color: ${({theme}) => theme.COLORS.INPUT_BACKGROUND};
+        background-color: ${({theme}) => theme.COLORS.DARK_900};
 
         border-radius: 0.5rem;
 
@@ -25,7 +25,7 @@ export const Container = styled.div`
 
         svg{
             margin-left: 1.4rem;
-            color: ${({theme}) => theme.COLORS.FONT_COLOR_GRAY_INPUT_TITLE};
+            color: ${({theme}) => theme.COLORS.LIGHT_500};
         }
 
         >input {
@@ -38,7 +38,7 @@ export const Container = styled.div`
             background-color: transparent;
             border: none;
 
-            color: ${({theme}) => theme.COLORS.FONT_COLOR_GRAY};
+            color: ${({theme}) => theme.COLORS.LIGHT_500};
             
             font-size: 1.6rem;
             font-weight: 400;        
@@ -50,5 +50,5 @@ export const Container = styled.div`
 export const Icon = styled.div`
     margin-left: 1.4rem;
     font-size: 2.4rem;
-    color: ${({theme}) => theme.COLORS.FONT_COLOR_GRAY_INPUT_TITLE};
+    color: ${({theme}) => theme.COLORS.LIGHT_500};
 `;
