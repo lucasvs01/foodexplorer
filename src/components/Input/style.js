@@ -7,9 +7,6 @@ export const Container = styled.div`
     
     h2 {
         color: ${({theme}) => theme.COLORS.LIGHT_400};
-        font-size: 1.6rem;
-        font-weight: 400;        
-
     }
 
     
@@ -39,16 +36,11 @@ export const Container = styled.div`
             border: none;
 
             color: ${({theme}) => theme.COLORS.LIGHT_500};
-            
-            font-size: 1.6rem;
-            font-weight: 400;        
 
+            outline-width: 1px;
+            outline-color: ${({theme}) => theme.COLORS.LIGHT_100};
+            outline-style: inside;
+            
         }
     }
-`;
-
-export const Icon = styled.div`
-    margin-left: 1.4rem;
-    font-size: 2.4rem;
-    color: ${({theme}) => theme.COLORS.LIGHT_500};
 `;

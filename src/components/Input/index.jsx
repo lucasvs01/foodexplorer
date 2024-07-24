@@ -1,12 +1,11 @@
 import { Container } from "./style";
-import {Icon} from "./style";
 
 
 export function Input({title, placeholder, icon:Icon, type, ...rest}){
 
     return(
         <Container {...rest} >
-            <h2>
+            <h2 className="roboto-small-regular">
                 {title}
             </h2>
            
@@ -18,7 +17,7 @@ export function Input({title, placeholder, icon:Icon, type, ...rest}){
                     </Icon>
                 }
                 
-                <input type={type} placeholder={placeholder}/>
+                <input className="roboto-small-regular" type={type} placeholder={placeholder}/>
             </div>
         </Container>
     )

@@ -70,9 +70,9 @@ export const Container = styled.div`
 
         height: 100vh;
 
-        max-height: 54rem;
+        max-height: 62.1rem;
         max-width: 47.6rem;
-        margin: 14.2rem 10.8rem 0 0;
+        margin: 9rem 10.8rem 0 0;
         padding: 6.4rem;
 
         form {

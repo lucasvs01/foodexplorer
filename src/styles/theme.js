@@ -50,6 +50,7 @@ export default {
     SIZES: {
         SMALL: "428px",
         MEDIUM: "768px",
-        LARGE: "1024px"
+        LARGE: "1024px",
+        EXTRA_LARGE: "1252px"
     }
 }

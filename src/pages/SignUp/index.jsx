@@ -7,7 +7,7 @@ import { Button } from "../../components/Button"
 
 
 
-export function SignIn(){
+export function SignUp(){
 
     return(
         <Container>
@@ -19,17 +19,19 @@ export function SignIn(){
 
             <div>
                 <form action="">
-                    <h1 className="poppins-400-medium">Faça o login</h1>
+                    <h1 className="poppins-400-medium">Crie a sua conta</h1>
 
+                    <Input label="Name" title="Seu nome" placeholder="Exemplo: Maria da Silva" type="text"/>
+                    
                     <Input label="Email" title="Email" placeholder="Exemplo: exemplo@exemplo.com.br" type="text"/>
 
                     <Input label="Senha" title="Senha" placeholder="No mínimo 6 caracteres" type="current-password"/>
 
                     <footer>
-                        <Button title="Entrar"></Button>
+                        <Button title="Criar conta"></Button>
 
                         <a href="#">
-                            Criar uma conta
+                            Já tenho uma conta
                         </a>
                     </footer>
                 </form>
