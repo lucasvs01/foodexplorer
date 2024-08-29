@@ -5,10 +5,13 @@ export function Input({title, placeholder, icon:Icon, type, ...rest}){
 
     return(
         <Container {...rest} >
-            <h2 className="roboto-small-regular">
-                {title}
-            </h2>
-           
+
+            {title && 
+                <h2 className="roboto-small-regular">
+                    {title}
+                </h2>
+            }
+
             <div>
 
             {Icon && 

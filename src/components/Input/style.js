@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-    display: grid;
-    gap: 0.8rem;
+    
     
     h2 {
         color: ${({theme}) => theme.COLORS.LIGHT_400};
+        margin-bottom: 0.8rem;
     }
 
     
@@ -27,7 +27,6 @@ export const Container = styled.div`
 
         >input {
             height: 100%;
-            width: 100%;
 
             padding: 1.2rem 1.4rem;
             border-radius: 0.5rem;
