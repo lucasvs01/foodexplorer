@@ -20,6 +20,7 @@ export const Container= styled.div`
         nav{
             display: flex;
             margin: .45rem 0;
+            align-items: center;
             
             img {
                 width: 3rem;
@@ -28,17 +29,9 @@ export const Container= styled.div`
 
 
             h1 {
-                margin-left: 1rem;
+                margin-left: 1rem;                
                 white-space: nowrap;
 
-                span{
-                color: ${({theme}) => theme.COLORS.CAKE_200};
-                margin-top: -0.6rem;
-                display: flex;
-                justify-content: end;
-
-
-               }
             }
 
         }
@@ -63,7 +56,7 @@ export const Container= styled.div`
             svg{
                 color: ${({theme}) => theme.COLORS.LIGHT_400};
                 
-                margin-left: 14.6rem;
+                margin-left: 10rem;
 
                 width: 2.4rem;
                 height: 2.4rem;
@@ -81,7 +74,7 @@ export const Container= styled.div`
                 height: 100%;
                 width: 100%;            
                 border-radius: 5px;            
-                padding: 1.6rem 14.45rem 1.6rem 0;
+                padding: 1.6rem 10rem 1.6rem 0;
 
 
                 color: ${({theme}) => theme.COLORS.LIGHT_500};
@@ -97,7 +90,7 @@ export const Container= styled.div`
         button {
             margin-left: 3.2rem;
             width: 21.6rem;            
-            max-height: 4.8rem;
+            min-height: 5.6rem;
 
             align-self: center;
 
@@ -105,11 +98,13 @@ export const Container= styled.div`
             
         }
 
+
         .exit {
             margin-left: 3.7rem;            
             max-height: 4.8rem;
 
             align-self: center;
+
 
         }
         
@@ -119,6 +114,9 @@ export const Container= styled.div`
             cursor: pointer;
         }
 
+        .receipt{
+            display: none;
+        }
     }
 
     /** Mobile and Laptop 1024px */
@@ -131,6 +129,7 @@ export const Container= styled.div`
 
         >header{
             display: flex;
+            align-items: center;
 
             .menu {
                 display: flex;
@@ -151,7 +150,7 @@ export const Container= styled.div`
                 justify-content: center;
                 height: 100%;
 
-                margin: .4rem 0 .4rem 8.1rem;
+                margin: 0.4rem 0 0.4rem 7.5rem;
                 
                 img {
                     width: 2.5rem;
@@ -165,14 +164,50 @@ export const Container= styled.div`
                     letter-spacing: 0;
                     display: flex;
                     margin-left: 0.8rem;
+
+                    white-space: nowrap;
                     
-                    span {
-                        color: ${({theme}) => theme.COLORS.CAKE_200};
-                        margin-top: 0.35rem;
-                        margin-left: 0.8rem;
-                    }
                 }
 
+            }
+
+            .receipt{
+                height: 3.8rem;
+                width: 3.8rem;
+                
+                margin-left: 7.5rem;
+                display: flex;
+                
+                position: relative;
+
+                svg {
+                align-self: center;
+                }
+
+                .orders {
+
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+            
+                    background-color: ${({theme}) => theme.COLORS.TOMATO_200};
+
+                    width: 2rem;
+                    height: 2rem;
+
+                    border-radius: 9.9rem;
+                }
+            }
+
+            .receipt:hover{
+                cursor: pointer;
+                filter: brightness(0.8);
+                transition: all 200ms;
             }
 
             .input{

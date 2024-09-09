@@ -6,14 +6,19 @@ export const Container = styled.button`
     border-radius: 0.5rem;
 
     display: flex;
-    gap: 0.6rem;
     align-items: center;
     justify-content: center;
 
     padding: 1.2rem 0;
+
+    svg {
+        margin-right: 1.1rem;
+    }
+
+    >span {
+        margin-left: 0.2rem;
+    }
     
-
-
 
 
 

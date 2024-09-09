@@ -13,7 +13,7 @@ import exit from "../../assets/exit.svg"
 
 
 
-export function HeaderAdmin({admin={admin}, ...rest}){
+export function HeaderUser({orders, ...rest}){
 
 
     return (
@@ -28,13 +28,17 @@ export function HeaderAdmin({admin={admin}, ...rest}){
 
                     <h1 className="roboto-bigger-bold">
                         food explorer
-
-                        <span className="roboto-smallest-regular">
-                            admin
-                        </span>
                     </h1>
 
                 </nav>
+
+                <div className="receipt">
+                    <Receipt/>
+
+                    <div className="orders poppins-100-medium">
+                        {orders}
+                    </div>
+                </div>
 
                 <div className="input">
                      <IoIosSearch />
@@ -43,7 +47,7 @@ export function HeaderAdmin({admin={admin}, ...rest}){
                 </div>
 
 
-                <Button title="Novo prato">
+                <Button icon={Receipt} title="Pedidos" orders={`(${orders})`}>
                     
                 </Button>
 
