@@ -7,6 +7,7 @@ import {SignIn} from "././pages/SignIn"
 import {SignUp} from "././pages/SignUp"
 import {HeaderAdmin} from "./components/HeaderAdmin"
 import {HeaderUser} from "./components/HeaderUser"
+import { Footer } from "./components/Footer"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -20,6 +21,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         
 
         {/* <SignUp/> */}
+
+        <Footer></Footer>
     </ThemeProvider>
   </React.StrictMode>
 )
