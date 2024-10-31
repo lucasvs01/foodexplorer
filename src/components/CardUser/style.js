@@ -19,7 +19,7 @@ export const Container = styled.div`
         cursor: pointer;
     }
 
-    >section {
+    >main {
         width: 100%;
         height: 100%;
         
@@ -58,6 +58,16 @@ export const Container = styled.div`
 
         }
 
+        .orders{
+            width: 100%;
+            
+            button{
+                width: 100%;
+                height: 3.2rem;
+                margin-top: 1.6rem;
+            }
+        }
+
     }
 
 
@@ -77,7 +87,7 @@ export const Container = styled.div`
 
 
 
-        >section{
+        >main{
             
             width: 100%;
             height: 100%;

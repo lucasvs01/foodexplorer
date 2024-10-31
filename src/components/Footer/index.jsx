@@ -6,15 +6,16 @@ export function Footer(){
 
     return (
         <Container>
-            <footer>
+            <div className="footer">
                 <div className="logo">
-                    <LogoFooter/>
-                    
-                    <h1 className="roboto-bigger-bold"> food explorer</h1>
-                </div>
+                        <LogoFooter/>
+                        
+                        <h1 className="roboto-bigger-bold"> food explorer</h1>
+                    </div>
 
-                <span className="roboto-smaller-regular">© 2023 - Todos os direitos reservados.</span>
-            </footer>
+                    <span className="roboto-smaller-regular">© 2023 - Todos os direitos reservados.</span>
+
+                </div>
         </Container>
     )
 }

@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.footer`
 
     display: flex;
     justify-content: center;
     padding: 2.4rem 12.3rem;
-    height: 7.7rem;
+    height: 77px;
     background-color: ${({theme}) => theme.COLORS.DARK_600};
 
 
+    
+
     /** Desktop over 1024px */
-    > footer {
+    > .footer {
 
         width: 100%;
         display: flex;
@@ -54,7 +56,7 @@ export const Container = styled.div`
         padding: 3rem 2.8rem;
 
         
-        > footer {
+        > .footer {
             display: flex;
             align-items: center;
             gap: 3.8rem;

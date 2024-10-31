@@ -8,11 +8,14 @@ export function Stepper({children, ...rest}){
 
     return (
         <Container className="stepper">
-            <img src={Minus} alt="Menos" />
 
-            <span className="roboto-big-bold">{children}</span>
+    
+                <img src={Minus} alt="Menos" />
 
-            <img src={Plus} alt="Mais" />
+                <span className="roboto-big-bold">{children}</span>
+
+                <img src={Plus} alt="Mais" />
+  
 
         </Container>
     )

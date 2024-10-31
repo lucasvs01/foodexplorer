@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from "./styles/theme"
 import {SignIn} from "././pages/SignIn"
 import {SignUp} from "././pages/SignUp"
+import {Home} from "././pages/Home"
 import {HeaderAdmin} from "./components/HeaderAdmin"
 import {HeaderUser} from "./components/HeaderUser"
 import { Footer } from "./components/Footer"
@@ -20,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         
       {/* <HeaderUser orders={1}/> */}
       
-      <CardAdmin/>
+      <Home orders={"02"}/>
       {/* <HeaderAdmin admin={true}/> */}
       
 

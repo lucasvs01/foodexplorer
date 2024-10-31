@@ -13,7 +13,7 @@ import exit from "../../assets/exit.svg"
 
 
 
-export function HeaderAdmin({admin={admin}, ...rest}){
+export function HeaderAdmin({...rest}){
 
 
     return (

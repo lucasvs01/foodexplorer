@@ -11,7 +11,7 @@ export function CardUser ({favorite, ...rest}){
 
             <Heart/>
 
-            <section>
+            <main>
 
                 <div className="dishes">
 
@@ -39,7 +39,7 @@ export function CardUser ({favorite, ...rest}){
                     <Button title="Incluir" className="poppins-100-medium"/>
                 
                 </div>
-            </section>
+            </main>
         </Container>
     )
 }

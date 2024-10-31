@@ -5,8 +5,10 @@ export const Container= styled.div`
 /** Desktop over 1024px */
     background-color: ${({theme}) => theme.COLORS.DARK_600};
 
+    /* max-height: 114px; */
     padding: 2.4rem 12.3rem;
-    
+    /* grid-area: "header"; */
+    /* position: fixed; */
 
     >header {
         display: flex;
@@ -123,13 +125,17 @@ export const Container= styled.div`
 
     @media (max-width:${({theme}) => theme.SIZES.LARGE}) {
         width: 100%;
+        grid-area: "header";
+
         padding: 5.6rem 2.8rem 2.4rem;
+        max-height: 114px;
 
         background-color: ${({theme}) => theme.COLORS.DARK_700};
 
         >header{
             display: flex;
             align-items: center;
+            height: 100%;
 
             .menu {
                 display: flex;
