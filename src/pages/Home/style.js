@@ -2,14 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-height: 100vh;
-width: 100%;
-
+        height: 100vh;
+        overflow-x: hidden;
 
     >main {
 
         margin-bottom: 25px;
-        
 
         .banner{
 
@@ -19,8 +17,6 @@ width: 100%;
             border-radius: 3px;
             
             margin: 4.4rem 1.6rem 6.2rem 3.6rem;
-            
-            min-width: 37.6rem;
             height: 12rem;
 
             display: flex;
@@ -28,12 +24,9 @@ width: 100%;
             position: relative;
 
             img{
-
                 position: absolute;
                 bottom: 0;
                 left: -30px;
-                
-                
             }
 
             .title{
@@ -48,7 +41,6 @@ width: 100%;
                 }
 
                 p{
-                    
                     margin-top: 3px;
                     font-weight: 400;
                     font-size: 1.2rem;
@@ -61,32 +53,33 @@ width: 100%;
             display: grid;
             gap: 2.4rem;
 
-            margin-left: 2.4rem;
+                                
+            width: 42.8rem; 
 
 
-                section {
+            
+            section {
+
+                padding-left: 2.4rem;
 
 
+                h2 {
+                    color: ${({theme}) => theme.COLORS.LIGHT_300};
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 500;
 
-                    h2 {
-                        color: ${({theme}) => theme.COLORS.LIGHT_300};
-                        font-family: "Poppins", sans-serif;
-                        font-size: 1.8rem;
-                        font-weight: 500;
-
-                        margin-bottom: 2.4rem;
-
-
-                    }
-
-                    .cards{
-                        display: flex;
-                        gap: 1.6rem;
-                    }
+                    margin-bottom: 2.4rem;
                 }
 
+                .Swiper{
+                    
+                    height: 29.2rem;
+                    width: 42.8rem;
+    
+                }
+            }
         }
-
     }
 `;
 

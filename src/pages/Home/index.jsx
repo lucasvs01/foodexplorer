@@ -6,15 +6,20 @@ import bg from "../../assets/bgSlogan.png"
 
 import {CardUser} from "../../components/CardUser"
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import  'swiper/css/navigation'
+import  'swiper/css/pagination'
 
-export function Home({ orders, ...rest}){
+
+export function Home({ orders,...rest}){
 
 
     
     return (
         <Container {...rest}>
            <HeaderUser orders={orders}></HeaderUser>
-           
+        
            <main>
                 <div className="banner">
                     <img src={bg} alt="" />
@@ -37,10 +42,33 @@ export function Home({ orders, ...rest}){
                             Pratos principais
                         </h2>
 
-                        <div className="cards">
-                            <CardUser/>
-                            <CardUser/>
-                        </div>
+                        <Swiper className="Swiper" spaceBetween={16} slidesPerView={2}>
+                            
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+                        </Swiper>
                     </section>
 
                     <section>
@@ -48,10 +76,33 @@ export function Home({ orders, ...rest}){
                             Sobremesas
                         </h2>
 
-                        <div className="cards">
-                            <CardUser/>
-                            <CardUser/>
-                        </div>
+                        <Swiper className="Swiper" spaceBetween={16} slidesPerView={2}>
+                            
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+                        </Swiper>
                     </section>
 
                     <section>
@@ -59,15 +110,35 @@ export function Home({ orders, ...rest}){
                             Bebidas
                         </h2>
 
-                        <div className="cards">
-                            <CardUser/>
-                            <CardUser/>
-                        </div>
-                    </section>
-                    
-                </div>
-                
+                        <Swiper  className="Swiper" spaceBetween={16} slidesPerView={2}>
+                            
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
 
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+
+                            <SwiperSlide className="Swiper-slide">
+                            <CardUser>
+                            </CardUser>
+                            </SwiperSlide>
+                        </Swiper>
+                    </section>
+                </div>
            </main>
            
                 <Footer/>
